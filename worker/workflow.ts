@@ -45,6 +45,7 @@ export class MyWorkflow extends WorkflowEntrypoint<
 		await notifyStep("wait 2 seconds", "running");
 		await step.sleep("wait 2 seconds", "2 seconds");
 		await notifyStep("wait 2 seconds", "completed");
+		await step.sleep("wait 2 seconds", "2 seconds");
 
 		// Step 3: Wait for event - shows interactive step.waitForEvent
 		await notifyStep("wait for approval", "waiting");
